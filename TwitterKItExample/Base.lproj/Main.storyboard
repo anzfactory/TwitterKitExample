@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="K1t-gK-0ad">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ツイート文" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="K1t-gK-0ad">
                                 <rect key="frame" x="16" y="198.5" width="343" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -31,19 +31,38 @@
                                     <action selector="tapTweet:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VyR-3d-muU"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="フォローしている鍵アカウントのツイートID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3bV-tP-IqQ">
+                                <rect key="frame" x="16" y="274" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WLU-wQ-6jM">
+                                <rect key="frame" x="172.5" y="312" width="30" height="30"/>
+                                <state key="normal" title="Get"/>
+                                <connections>
+                                    <action selector="tapGet:" destination="BYZ-38-t0r" eventType="touchUpInside" id="miy-zp-IlV"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="WLU-wQ-6jM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8NG-Bz-MU5"/>
+                            <constraint firstItem="3bV-tP-IqQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Cxp-0F-kmD"/>
+                            <constraint firstItem="WLU-wQ-6jM" firstAttribute="top" secondItem="3bV-tP-IqQ" secondAttribute="bottom" constant="8" id="J1Q-cr-Y2F"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="K1t-gK-0ad" secondAttribute="trailing" constant="16" id="MVf-Pc-fz4"/>
                             <constraint firstItem="K1t-gK-0ad" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-120" id="Psl-04-zpi"/>
                             <constraint firstItem="daD-3q-SFo" firstAttribute="top" secondItem="K1t-gK-0ad" secondAttribute="bottom" constant="7.5" id="RZM-Bi-hWX"/>
                             <constraint firstItem="K1t-gK-0ad" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Sp5-4W-CAG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3bV-tP-IqQ" secondAttribute="trailing" constant="16" id="g4a-ht-rjb"/>
+                            <constraint firstItem="3bV-tP-IqQ" firstAttribute="top" secondItem="daD-3q-SFo" secondAttribute="bottom" constant="8" id="wQX-KY-2En"/>
                             <constraint firstItem="daD-3q-SFo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ygb-GD-UND"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="textField" destination="K1t-gK-0ad" id="Efe-mN-q96"/>
+                        <outlet property="tweetIdTextField" destination="3bV-tP-IqQ" id="Eor-Ym-1mo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

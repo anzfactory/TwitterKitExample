@@ -12,6 +12,7 @@
 		2BBFD1DC1FC87D5D0032AE1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BBFD1DA1FC87D5D0032AE1D /* Main.storyboard */; };
 		2BBFD1DE1FC87D5D0032AE1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BBFD1DD1FC87D5D0032AE1D /* Assets.xcassets */; };
 		2BBFD1E11FC87D5D0032AE1D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BBFD1DF1FC87D5D0032AE1D /* LaunchScreen.storyboard */; };
+		2BFA20881FC8933F00CD8B84 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BFA20871FC8933700CD8B84 /* SafariServices.framework */; };
 		4374796B351E43E6339BB03D /* Pods_TwitterKItExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE82384373B18EE608E54EF /* Pods_TwitterKItExample.framework */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +24,7 @@
 		2BBFD1DD1FC87D5D0032AE1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2BBFD1E01FC87D5D0032AE1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2BBFD1E21FC87D5D0032AE1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2BFA20871FC8933700CD8B84 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
 		321E0FF97577123B496206F1 /* Pods-TwitterKItExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwitterKItExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-TwitterKItExample/Pods-TwitterKItExample.release.xcconfig"; sourceTree = "<group>"; };
 		4FE82384373B18EE608E54EF /* Pods_TwitterKItExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TwitterKItExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6057B0C2463E68A582FF5E87 /* Pods-TwitterKItExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwitterKItExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TwitterKItExample/Pods-TwitterKItExample.debug.xcconfig"; sourceTree = "<group>"; };
@@ -33,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BFA20881FC8933F00CD8B84 /* SafariServices.framework in Frameworks */,
 				4374796B351E43E6339BB03D /* Pods_TwitterKItExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -74,6 +77,7 @@
 		3119F517E1B196F7B6655B09 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2BFA20871FC8933700CD8B84 /* SafariServices.framework */,
 				4FE82384373B18EE608E54EF /* Pods_TwitterKItExample.framework */,
 			);
 			name = Frameworks;
